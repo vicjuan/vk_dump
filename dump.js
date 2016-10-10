@@ -18,7 +18,7 @@ page.open(url, function (status) {
       var base = obj.base;
       var w = obj.w_ + '';
       var comma = w.indexOf(","); 
-      console.log("curl -O " + obj.base + w.substring(0, comma) + ".jpg");
+      console.log("curl " + obj.base + w.substring(0, comma) + ".jpg" + " -o " + i + ".jpg");
     }
   });
   phantom.exit();
